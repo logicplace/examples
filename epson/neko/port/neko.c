@@ -312,7 +312,7 @@ int main(void)
 		//<reset WDT>
 		//sfr_wchtmr1 |= 0x04;
 		//<Halt>
-		//_halt();
+		_halt();
 	}
 
 	return 0;
