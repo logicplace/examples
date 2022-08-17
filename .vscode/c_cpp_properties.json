@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Pokemon mini",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../c88-pokemini/include",
+                "${workspaceFolder}/../c88-pokemini/c88tools/include"
+            ],
+            "forcedInclude": ["c88.h"],
+            "cStandard": "c99",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
