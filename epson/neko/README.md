@@ -8,6 +8,8 @@ Perhaps some day we can get this running on the sim, too!
 
 ## port
 
+WARNING: Does not work on hardware. Will lock the unit, requiring you to remove the battery.
+
 There are some considerations to be made here, because neko.c is written as if there's no BIOS on the device, whereas we have to deal with the existence of one. While using the software interrupts in the BIOS might cut out and improve some code, this version does not do that.
 
 In order to not break modern editors, I added occlusive comments around ASM blocks.
@@ -23,4 +25,10 @@ srec_cat neko.abs -o neko.min -binary
 
 ## repro
 
-TODO
+Made making use of pm.h and our boilerplate startup.asm and isr.c
+
+This version is relatively more modern and should ideally be easier to maintain and build.
+
+If your environment is set up correctly, you just need to run `mk88` from the folder to build.
+
+TODO: Convert the graphics to a sprite sheet and use a graphics converter
