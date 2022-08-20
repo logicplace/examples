@@ -281,7 +281,7 @@ int main(void)
 	//sfr_r2xd |= 0x60;				// set R25(CL),R26(FR) output data to H
 	sfr_lcd1 = 0x0008;				/* 12x16 map, frame copy enabled
 									   frame divider of 3 */
-	sfr_lcd2 = 0x1c;				/* initial contrast = 7 */
+	sfr_lcd2 |= 0x1c;				/* initial contrast = 7 */
 	/*<clock>*/
 	sfr_intpri1 |= 0x80;			// set interrupt priority 2
 	sfr_wchtmr1 |= 0x02;			// reset clock timer
