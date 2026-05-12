@@ -12,9 +12,9 @@ int main(void)
 	AUD_CTRL &= 0xFC; // this is the default
 	AUD_VOL = 2; // 50% volume
 
-	// Generate square wave
-	TMR3_PRE = 8000;
-	TMR3_PVT = 4000; // half of PRE
+	// Generate square wave at A4, ~440 Hz
+	TMR3_PRE = 4544;
+	TMR3_PVT = 2272; // half of PRE = 50% pulse width
 
 	// Enable timer
 	TMR3_CTRL_L = 0x04;
